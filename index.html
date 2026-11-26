@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jelajahi keindahan alam Kabupaten Pesawaran, Lampung. Temukan pantai, pulau, air terjun, dan pegunungan.">
+
+    <title>PESONA | Pesawaran dalam Nuansa Alam</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+</head>
+
+<body>
+
+<!-- PRELOADER -->
+<div class="preloader" id="preloader">
+    <div class="preloader-content">
+        <img src="pict/logo.png" alt="Logo Pesona">
+        <h2>PESONA</h2>
+        <p>PESAWARAN DALAM NUANSA ALAM</p>
+        <div class="loader-line"></div>
+    </div>
+</div>
+
+<!-- SCROLL PROGRESS -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- NAVBAR -->
+<header class="header" id="header">
+    <div class="container navbar">
+
+        <a href="#home" class="logo">
+            <img src="pict/logo.png" alt="Logo Pesona">
+
+            <div class="logo-text">
+                <strong>PESONA</strong>
+                <small>Pesawaran dalam Nuansa Alam</small>
+            </div>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <div class="nav-links">
+                <a href="#home" class="current">Beranda</a>
+                <a href="#about">Tentang</a>
+                <a href="#destinations">Destinasi</a>
+                <a href="#gallery">Galeri</a>
+            </div>
+
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- HERO / BERANDA -->
+<main>
+
+<section class="hero" id="home">
+
+    <img
+        src="pict/ikon.jpeg"
+        alt="Keindahan panorama alam Pesawaran"
+        class="hero-image"
+    >
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+            <span class="eyebrow">
+                LAMPUNG · INDONESIA
+            </span>
+
+            <h1>
+                Jelajahi<br>
+                <em>Pesona Alam</em><br>
+                Pesawaran.
+            </h1>
+
+            <p>
+                Temukan keindahan pulau tropis, pantai yang memikat,
+                hutan yang asri, dan panorama pegunungan
+                di Kabupaten Pesawaran.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#destinations" class="btn btn-gold">
+                    Lihat Destinasi <span>↗</span>
+                </a>
+
+                <a href="#about" class="btn btn-outline">
+                    Kenali Pesawaran
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-bottom">
+        <span>KEINDAHAN ALAM LAMPUNG</span>
+        <span>JELAJAHI PESAWARAN ↓</span>
+    </div>
+
+</section>
+
+
+<!-- TENTANG PESAWARAN -->
+<section class="section about" id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-image">
+
+            <img
+                src="pict/pahawang.jpg"
+                alt="Keindahan alam Pulau Pahawang"
+                loading="lazy"
+            >
+
+            <div class="image-label">
+                <span>KEINDAHAN LAMPUNG</span>
+                <h3>Pesawaran</h3>
+            </div>
+
+        </div>
+
+        <div class="about-content">
+
+            <span class="eyebrow">TENTANG PESAWARAN</span>
+
+            <h2>
+                Sebuah Keindahan<br>
+                dalam <em>Harmoni Alam.</em>
+            </h2>
+
+            <p class="lead">
+                Pesawaran menyimpan beragam pesona alam
+                yang menjadikannya salah satu tujuan wisata
+                menarik di Provinsi Lampung.
+            </p>
+
+            <p>
+                Mulai dari hamparan pantai berpasir putih,
+                pulau-pulau tropis dengan air laut yang jernih,
+                hingga kawasan perbukitan dan air terjun
+                yang menawarkan suasana sejuk dan menenangkan.
+            </p>
+
+            <p>
+                Setiap sudut Pesawaran menghadirkan pengalaman
+                berbeda bagi siapa saja yang ingin menikmati
+                keindahan alam dan menjelajahi tempat-tempat baru.
+            </p>
+
+            <a href="#destinations" class="text-link">
+                Temukan Keindahannya ↗
+            </a>
+
+            <div class="stats">
+
+                <div>
+                    <h3>16</h3>
+                    <span>Destinasi Wisata</span>
+                </div>
+
+                <div>
+                    <h3>4</h3>
+                    <span>Pesona Alam</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- DESTINASI -->
+<section class="section destinations" id="destinations">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="eyebrow">JELAJAHI KEINDAHANNYA</span>
+
+                <h2>
+                    Destinasi <em>Wisata.</em>
+                </h2>
+            </div>
+
+            <p>
+                Temukan berbagai tempat menarik di Pesawaran,
+                mulai dari keindahan laut hingga pesona alam
+                yang tersembunyi.
+            </p>
+
+        </div>
+
+
+        <!-- PENCARIAN -->
+        <div class="destination-tools">
+
+            <div class="filter-list">
+
+                <button class="filter-btn active" data-filter="all">
+                    Semua
+                </button>
+
+                <button class="filter-btn" data-filter="pantai">
+                    Pantai
+                </button>
+
+                <button class="filter-btn" data-filter="pulau">
+                    Pulau
+                </button>
+
+                <button class="filter-btn" data-filter="air-terjun">
+                    Air Terjun
+                </button>
+
+                <button class="filter-btn" data-filter="alam">
+                    Alam
+                </button>
+
+            </div>
+
+            <input
+                type="search"
+                id="destinationSearch"
+                placeholder="Cari destinasi..."
+                aria-label="Cari destinasi"
+            >
+
+        </div>
+
+
+        <!-- KARTU DESTINASI -->
+        <div class="destination-grid" id="destinationGrid">
+
+            <article class="destination-card" data-category="pulau">
+                <div class="destination-image">
+                    <img src="pict/pahawang.jpg" alt="Pulau Pahawang" loading="lazy">
+                    <span class="destination-category">Pulau</span>
+                </div>
+                <div class="destination-info">
+                    <span class="location">Punduh Pidada</span>
+                    <h3>Pulau Pahawang</h3>
+                    <p>Pulau tropis dengan air laut jernih dan keindahan bawah laut yang memikat.</p>
+                    <div class="detail-content">Pulau Pahawang dikenal dengan keindahan lautnya, panorama pantai, serta kegiatan snorkeling yang menarik untuk menikmati kehidupan bawah laut.</div>
+                    <button class="detail-btn">Lihat Detail ↗</button>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="pulau">
+                <div class="destination-image">
+                    <img src="pict/kelagian.jpg" alt="Pulau Kelagian" loading="lazy">
+                    <span class="destination-category">Pulau</span>
+                </div>
+                <div class="destination-info">
+                    <span class="location">Padang Cermin</span>
+                    <h3>Pulau Kelagian</h3>
+                    <p>Hamparan pasir putih dan air laut berwarna biru yang menyegarkan.</p>
+                    <div class="detail-content">Pulau Kelagian menawarkan pemandangan pantai yang indah dengan pasir putih, air laut jernih, dan suasana alam tropis yang cocok untuk bersantai.</div>
+                    <button class="detail-btn">Lihat Detail ↗</button>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="pulau">
+                <div class="destination-image">
+                    <img src="pict/legundi.jpg" alt="Pulau Legundi" loading="lazy">
+                    <span class="destination-category">Pulau</span>
+                </div>
+                <div class="destination-info">
+                    <span class="location">Punduh Pidada</span>
+                    <h3>Pulau Legundi</h3>
+                    <p>Keindahan pulau dengan suasana tenang dan panorama laut luas.</p>
+                    <div class="detail-content">Pulau Legundi merupakan salah satu kawasan kepulauan di Pesawaran yang memiliki panorama laut dan lingkungan alam yang menarik untuk dijelajahi.</div>
+                    <button class="detail-btn">Lihat Detail ↗</button>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="pantai">
+                <div class="destination-image">
+                    <img src="pict/sari-ringgung.jpg" alt="Pantai Sari Ringgung" loading="lazy">
+                    <span class="destination-category">Pantai</span>
+                </div>
+                <div class="destination-info">
+                    <span class="location">Teluk Pandan</span>
+                    <h3>Pantai Sari Ringgung</h3>
+                    <p>Pantai dengan panorama laut dan hamparan pasir yang mempesona.</p>
+                    <div class="detail-content">Pantai Sari Ringgung menawarkan pemandangan laut yang indah serta suasana pantai yang cocok untuk menikmati waktu bersama keluarga.</div>
+                    <button class="detail-btn">Lihat Detail ↗</button>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="pantai">
+                <div class="destination-image">
+                    <img src="pict/mutun.jpg" alt="Pantai Mutun" loading="lazy">
+                    <span class="destination-category">Pantai</span>
+                </div>
+                <div class="destination-info">
+                    <span class="location">Teluk Pandan</span>
+                    <h3>Pantai Mutun</h3>
+                    <p>Suasana pantai yang nyaman dengan pemandangan laut yang indah.</p>
+                    <div class="detail-content">Pantai Mutun merupakan salah satu destinasi wisata bahari di Pesawaran yang menawarkan panorama laut dan berbagai aktivitas wisata pantai.</div>
+                    <button class="detail-btn">Lihat Detail ↗</button>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="pantai">
+                <div class="destination-image">
+                    <img src="pict/ketapang.webp" alt="Pantai Ketapang" loading="lazy">
+                    <span class="destination-category">Pantai</span>
+                </div>
+                <div class="destination-info">
+                    <span class="location">Teluk Pandan</span>
+                    <h3>Pantai Ketapang</h3>
+                    <p>Destinasi bahari dengan panorama laut yang menenangkan.</p>
+                    <div class="detail-content">Pantai Ketapang menjadi salah satu kawasan wisata bahari di Pesawaran yang dapat dinikmati untuk melihat pemandangan laut dan pesisir.</div>
+                    <button class="detail-btn">Lihat Detail ↗</button>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="pantai">
+                <div class="destination-image">
+                    <img src="pict/klara.jpg" alt="Pantai Klara" loading="lazy">
+                    <span class="destination-category">Pantai</span>
+                </div>
+                <div class="destination-info">
+                    <span class="location">Padang Cermin</span>
+                    <h3>Pantai Klara</h3>
+                    <p>Pantai dengan suasana tropis dan pemandangan yang menyegarkan.</p>
+                    <div class="detail-content">Pantai Klara dikenal dengan suasana pesisir yang menarik dan panorama laut yang dapat dinikmati pengunjung.</div>
+                    <button class="detail-btn">Lihat Detail ↗</button>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="air-terjun">
+                <div class="destination-image">
+                    <img src="pict/lubuklaw.jpeg" alt="Air Terjun Lubuk Law" loading="lazy">
+                    <span class="destination-category">Air Terjun</span>
+                </div>
+                <div class="destination-info">
+                    <span class="location">Pesawaran</span>
+                    <h3>Air Terjun Lubuk Law</h3>
+                    <p>Pesona alam dengan suasana sejuk dan nuansa alami.</p>
+                    <div class="detail-content">Air Terjun Lubuk Law menjadi salah satu pilihan wisata alam bagi pengunjung yang ingin menikmati suasana alam yang lebih tenang dan asri.</div>
+                    <button class="detail-btn">Lihat Detail ↗</button>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="Air Terjun">
+                <div class="destination-image">
+                    <img src="pict/talangrabun.webp" alt="Air Terjun Talang Rabun" loading="lazy">
+                    <span class="destination-category">Air Terjun</span>
+                </div>
+                <div class="destination-info">
+                    <span class="location">Pesawaran</span>
+                    <h3>Air Terjun Talang Rabun</h3>
+                    <p>Keindahan alam dengan suasana hijau yang menenangkan.</p>
+                    <div class="detail-content">Air Terjun Talang Rabun merupakan salah satu pilihan untuk menikmati suasana alam dan pemandangan hijau di kawasan Pesawaran.</div>
+                    <button class="detail-btn">Lihat Detail ↗</button>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="Air Terjun">
+                <div class="destination-image">
+                    <img src="pict/gunungbetung.jpeg" alt="Air Terjun Gunung Betung" loading="lazy">
+                    <span class="destination-category">Air Terjun</span>
+                </div>
+                <div class="destination-info">
+                    <span class="location">Kawasan Gunung Betung</span>
+                    <h3>Air Terjun Gunung Betung</h3>
+                    <p>Panorama perbukitan dan hutan yang asri.</p>
+                    <div class="detail-content">Air Terjun Gunung Betung menghadirkan suasana pegunungan dengan udara yang sejuk, kawasan hutan, dan panorama alam yang menarik.</div>
+                    <button class="detail-btn">Lihat Detail ↗</button>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="air-terjun">
+                <div class="destination-image">
+                    <img src="pict/ciupang.jpg" alt="Air Terjun Ciupang" loading="lazy">
+                    <span class="destination-category">Air Terjun</span>
+                </div>
+                <div class="destination-info">
+                    <span class="location">Padang Cermin</span>
+                    <h3>Air Terjun Ciupang</h3>
+                    <p>Keindahan air terjun di tengah lingkungan alam yang hijau.</p>
+                    <div class="detail-content">Air Terjun Ciupang merupakan destinasi wisata alam dengan aliran air yang indah dan suasana sekitar yang asri.</div>
+                    <button class="detail-btn">Lihat Detail ↗</button>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="Air Terjun">
+                <div class="destination-image">
+                    <img src="pict/talangmulya.jpg" alt="Air TerjunTalang Mulya" loading="lazy">
+                    <span class="destination-category">Air Terjun</span>
+                </div>
+                <div class="destination-info">
+                    <span class="location">Teluk Pandan</span>
+                    <h3>Air Terjun Talang Mulya</h3>
+                    <p>Suasana pedesaan dan panorama alam yang menyejukkan.</p>
+                    <div class="detail-content">Talang Mulya menawarkan suasana alam dan lingkungan pedesaan yang menarik untuk dinikmati.</div>
+                    <button class="detail-btn">Lihat Detail ↗</button>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="Alam">
+                <div class="destination-image">
+                    <img src="pict/pesawaran.jpg" alt="Gunung Pesawaran" loading="lazy">
+                    <span class="destination-category">Alam</span>
+                </div>
+                <div class="destination-info">
+                    <span class="location">Pesawaran</span>
+                    <h3>Gunung Pesawaran</h3>
+                    <p>Keindahan bentang alam yang menjadi daya tarik daerah.</p>
+                    <div class="detail-content">Pesawaran memiliki beragam bentang alam, mulai dari kawasan pesisir hingga perbukitan yang memperkaya potensi wisata daerah.</div>
+                    <button class="detail-btn">Lihat Detail ↗</button>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="Alam">
+                <div class="destination-image">
+                    <img src="pict/nirwana.jpeg" alt="Gunung Nirwana" loading="lazy">
+                    <span class="destination-category">Alam</span>
+                </div>
+                <div class="destination-info">
+                    <span class="location">Pesawaran</span>
+                    <h3>Gunung Nirwana</h3>
+                    <p>Panorama pesisir dengan suasana yang nyaman.</p>
+                    <div class="detail-content">Gunung Nirwana menjadi pilihan untuk menikmati keindahan kawasan pesisir dan suasana laut di Pesawaran.</div>
+                    <button class="detail-btn">Lihat Detail ↗</button>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="Alam">
+                <div class="destination-image">
+                    <img src="pict/ratai.webp" alt="Gunung Ratai" loading="lazy">
+                    <span class="destination-category">Alam</span>
+                </div>
+                <div class="destination-info">
+                    <span class="location">Padang Cermin</span>
+                    <h3>Gunung Ratai</h3>
+                    <p>Perpaduan keindahan alam dan panorama perbukitan.</p>
+                    <div class="detail-content">Gunung Ratai menawarkan pemandangan alam yang menarik dan suasana perjalanan yang dikelilingi keindahan alam Pesawaran.</div>
+                    <button class="detail-btn">Lihat Detail ↗</button>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="Alam">
+                <div class="destination-image">
+                    <img src="pict/betung.jpeg" alt="Gunung Betung" loading="lazy">
+                    <span class="destination-category">Alam</span>
+                </div>
+                <div class="destination-info">
+                    <span class="location">Pesawaran</span>
+                    <h3>Gunung Betung</h3>
+                    <p>Suasana hijau dengan keindahan alam yang masih asri.</p>
+                    <div class="detail-content">Gunung Betung menjadi bagian dari kekayaan alam Pesawaran yang menawarkan suasana alami dan pemandangan hijau.</div>
+                    <button class="detail-btn">Lihat Detail ↗</button>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="empty-state" id="emptyState">
+            <h3>Destinasi Tidak Ditemukan</h3>
+            <p>Coba gunakan kata kunci pencarian yang berbeda.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- QUOTE -->
+<section class="quote-section">
+
+    <div class="container quote-content">
+
+        <span class="eyebrow">PESONA ALAM LAMPUNG</span>
+
+        <h2>
+            "Alam selalu punya cara
+            untuk membuat kita
+            <em>jatuh cinta.</em>"
+        </h2>
+
+        <p>
+            Pesawaran, tempat keindahan alam bertemu dengan ketenangan.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- GALERI -->
+<section class="section gallery" id="gallery">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="eyebrow">CERITA DALAM GAMBAR</span>
+                <h2>Galeri <em>Pesona.</em></h2>
+            </div>
+
+            <p>
+                Lihat lebih dekat keindahan alam Pesawaran
+                melalui berbagai sudut yang memikat.
+            </p>
+
+        </div>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img src="pict/pahawang.jpg" alt="Pulau Pahawang" loading="lazy">
+                <div class="gallery-caption">Pulau Pahawang</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="pict/kelagian.jpg" alt="Pulau Kelagian" loading="lazy">
+                <div class="gallery-caption">Pulau Kelagian</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="pict/sari-ringgung.jpg" alt="Pantai Sari Ringgung" loading="lazy">
+                <div class="gallery-caption">Pantai Sari Ringgung</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="pict/ciupang.jpg" alt="Air Terjun Ciupang" loading="lazy">
+                <div class="gallery-caption">Air Terjun Ciupang</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="pict/gunungbetung.jpeg" alt="Gunung Betung" loading="lazy">
+                <div class="gallery-caption">Gunung Betung</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="pict/pesawaran.jpg" alt="Gunung Pesawaran" loading="lazy">
+                <div class="gallery-caption">Gunung Pesawaran</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PETA -->
+<section class="section map-section" id="map">
+
+    <div class="container map-layout">
+
+        <div class="map-content">
+
+            <span class="eyebrow">TEMUKAN LOKASINYA</span>
+
+            <h2>
+                Jelajahi<br>
+                <em>Pesawaran.</em>
+            </h2>
+
+            <p>
+                Kabupaten Pesawaran berada di Provinsi Lampung.
+                Temukan lokasi Pesawaran melalui peta
+                dan rencanakan perjalananmu menjelajahi
+                keindahan alamnya.
+            </p>
+
+            <div class="map-chips" id="mapChips"></div>
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=Kabupaten+Pesawaran+Lampung"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-gold"
+            >
+                Buka Google Maps ↗
+            </a>
+
+        </div>
+
+        <div class="map-frame">
+            <div id="pesonaMap" role="application" aria-label="Peta interaktif destinasi Pesawaran"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <a href="#home" class="logo footer-logo">
+
+                <img src="pict/logo.png" alt="Logo Pesona">
+
+                <div class="logo-text">
+                    <strong>PESONA</strong>
+                    <small>Pesawaran dalam Nuansa Alam</small>
+                </div>
+
+            </a>
+
+            <p>
+                Menjelajahi keindahan alam Pesawaran,
+                Lampung, Indonesia.
+            </p>
+
+            <a href="#home" class="back-home">
+                Kembali ke Atas ↑
+            </a>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>© 2026 PESONA. Seluruh Hak Dilindungi.</span>
+
+            <span>Dibuat dengan cinta untuk Pesawaran.</span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- MODAL DETAIL -->
+<div class="modal-backdrop" id="detailModal">
+
+    <div class="detail-modal">
+
+        <button class="modal-close" id="modalClose" aria-label="Tutup">
+            &times;
+        </button>
+
+        <div id="modalContent"></div>
+
+    </div>
+
+</div>
+
+
+<!-- LIGHTBOX GALERI -->
+<div class="lightbox" id="lightbox">
+
+    <button class="lightbox-close" id="lightboxClose" aria-label="Tutup">
+        &times;
+    </button>
+
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Sebelumnya">
+        &#10094;
+    </button>
+
+    <img src="" alt="" id="lightboxImage">
+
+    <p id="lightboxCaption"></p>
+
+    <button class="lightbox-next" id="lightboxNext" aria-label="Selanjutnya">
+        &#10095;
+    </button>
+
+</div>
+
+
+<!-- TOMBOL KEMBALI KE ATAS -->
+<button class="to-top" id="toTop" aria-label="Kembali ke atas">
+    ↑
+</button>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
